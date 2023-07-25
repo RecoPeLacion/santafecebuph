@@ -20,3 +20,4 @@ require get_template_directory() . '/inc/cleanup.php';
 require get_template_directory() . '/inc/custom-post.php';
 require get_template_directory() . '/inc/custom-taxonomy.php';
 require get_template_directory() . '/inc/custom-fields.php';
+require get_template_directory() . '/inc/shortcode.php';
