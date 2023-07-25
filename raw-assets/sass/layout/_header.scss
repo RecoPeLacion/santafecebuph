@@ -1,0 +1,82 @@
+.sf_main-header--top {
+    background-color: $theme-color;
+    padding: 15px 0;
+}
+
+.sf_main-header--top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sf_main-header--top-button {
+    a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: $white;
+        color: $green;
+        padding: 8px 20px;
+        border-radius: 25px;
+        font-weight: 700;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $green;
+            color: $white;
+        }
+    }
+}
+
+.sf_main-header--top-title {
+    color: $white;
+    font-weight: 600;
+}
+
+.sf_main-header--top-phone {
+    a {
+        color: $white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    svg {
+        fill: $white;
+    }
+}
+
+.sf_main-header--nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sf_main-header--navbar {
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .nav-link {
+            color: $heading-color;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}
+
+.sf_main-header--nav {
+    padding: 15px 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+}
+
+.sf_main-header--search {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+}
