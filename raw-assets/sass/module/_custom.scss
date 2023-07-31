@@ -60,6 +60,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @media screen and (max-width: 767px) {
+        padding: 30px 15px;
+    }
 }
 
 .sf_ord-reso--button {
@@ -77,6 +80,76 @@
             position: relative;
             top: 3px;
             margin-right: 5px;
+        }
+    }
+}
+
+// card
+.card_list {
+    background-color: $white;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.card_list_container {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.card_list_left {
+    flex: 1;
+}
+
+.card_list_wrapper {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.card_list_img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.card_list_content {
+    flex: 1;
+    @media screen and (max-width: 600px) {
+        text-align: center;
+    }
+    h3 {
+        margin-bottom: 5px;
+        color: #032A51;
+        font-family: "Raleway", Sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.card_list_button {
+    a {
+        display: inline-block;
+        text-decoration: none !important;
+        background-color: $theme-color-dark;
+        color: #fff;
+        padding: 15px 50px;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $theme-color;
         }
     }
 }
