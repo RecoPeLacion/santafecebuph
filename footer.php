@@ -11,6 +11,28 @@
 $logo = esc_attr( get_option( 'logo_url' ) );
 
 ?>
+
+	<!-- accomodation -->
+	<?php 
+		if(is_front_page()) {
+			?>
+				<section class="sf_acc">
+					<div class="cntr">
+						<div class="sf_acc--wrapper">
+							<div class="sf_title">
+								<h2>VISIT US NOW!</h2>
+							</div>
+							<div class="sf_acc--button">
+								<a href="#">Visit List of Accomodations</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			<?php
+		 }
+	?>
+	<!-- end of accomodation -->
+
 	</main>
 	<footer class="sf_main-footer">
 		<div class="cntr">

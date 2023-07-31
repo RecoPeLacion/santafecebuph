@@ -64,5 +64,149 @@ get_header();
 </section>
 <!-- end of reso and ordinance -->
 
+<!-- founding day -->
+<section class="sf_founding">
+    <div class="cntr">
+        <div class="sf_title sf_title--02">
+            <h2>Founding Day</h2>
+        </div>
+    </div>
+</section>
+<!-- end of founding day -->
+
+<!-- upcoming events -->
+<section class="sf_upcoming">
+    <div class="cntr">
+        <div class="sf_title sf_title--02">
+            <h2>Santa Fe Upcoming Events</h2>
+        </div>
+        <ul class="sf_upcoming--list">
+            <?php
+            // upcoming events query
+            $upcoming_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3, 'order'=> 'DESC')); ?>
+            <?php if ( $upcoming_query->have_posts() ) : ?>
+                <?php while ( $upcoming_query->have_posts() ) : $upcoming_query->the_post(); ?>
+                <li class="sf_upcoming--item">
+                    <a href="<?php the_permalink(); ?>" class="sf_upcoming--link">
+                        <div class="sf_upcoming--card">
+                            <div class="sf_upcoming--img">
+                                <?php if(has_post_thumbnail()): ?>
+                                    <?php
+                                        $thumb_id = get_post_thumbnail_id(get_the_ID());
+                                        $alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+                                    ?>
+                                    <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri()?>/assets/img/blog01.png" alt="">
+                                <?php endif; ?>
+                            </div>
+                            <div class="sf_upcoming--content">
+                                <h3><?php the_title(); ?></h3>
+                                <?php the_excerpt(); ?>
+                                <div class="sf_upcoming--button">
+                                    Read More
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <h4 class="no-post tc"><?php _e( 'Coming Soon...' ); ?></h4>
+            <?php endif; ?>
+        </ul>
+    </div>
+</section>
+<!-- end of upcoming events -->
+
+<!-- government policies -->
+<section class="sf_gov">
+    <div class="cntr">
+        <div class="sf_title sf_title--02">
+            <h2>Government Policies</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus accumsan nisl, et tempus ligula laoreet sed. Maecenas semper libero sit amet sapien porttitor, eget viverra odio pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem velit, interdum interdum eros eu, pulvinar placerat augue.</p>
+        </div>
+        <ul class="sf_gov--list">
+            <?php
+            // gov policies query
+            $government_pol = new WP_Query(array('post_type'=>'government-policies', 'post_status'=>'publish', 'posts_per_page'=>15, 'order'=> 'DESC')); ?>
+            <?php if ( $government_pol->have_posts() ) : ?>
+                <?php while ( $government_pol->have_posts() ) : $government_pol->the_post(); ?>
+                <li class="sf_gov--item">
+                    <a href="#" class="sf_gov--link">
+                        <div class="sf_gov--card">
+                            <div class="sf_gov--img">
+                                <?php if(has_post_thumbnail()): ?>
+                                    <?php
+                                        $thumb_id = get_post_thumbnail_id(get_the_ID());
+                                        $alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+                                    ?>
+                                    <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri()?>/assets/img/blog01.png" alt="">
+                                <?php endif; ?>
+                            </div>
+                            <h3 class="sf_gov--title"><?php the_title(); ?></h3>
+                        </div>
+                    </a>
+                </li>
+                <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <h4 class="no-post tc"><?php _e( 'Coming Soon...' ); ?></h4>
+            <?php endif; ?>
+        </ul>
+    </div>
+</section>
+<!-- end of government policies -->
+
+<!-- sta fe videos -->
+<section class="sf_videos">
+    <div class="cntr">
+        <div class="sf_title sf_title--02">
+            <h2>Santa Fe Latest Videos</h2>
+        </div>
+        <ul class="sf_videos--list">
+            
+            <?php
+            // gov videos query
+            $government_vid = new WP_Query(array('post_type'=>'videos', 'post_status'=>'publish', 'posts_per_page'=>15, 'order'=> 'DESC')); ?>
+            <?php if ( $government_vid->have_posts() ) : ?>
+                <?php while ( $government_vid->have_posts() ) : $government_vid->the_post(); ?>
+                <li class="sf_videos--item">
+                    <a href="#" class="sf_videos--link">
+                        <div class="sf_videos--card">
+                            <h3 class="sf_videos--title"><?php the_title(); ?></h3>
+                            <div class="sf_videos--footer">
+                                <span class="sf_videos--author">Admin</span>
+                                <span class="sf_videos--date">June 9, 2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <h4 class="no-post tc"><?php _e( 'Coming Soon...' ); ?></h4>
+            <?php endif; ?>
+        </ul>
+    </div>
+</section>
+<!-- end of sta fe videos -->
+
+<!-- sta fe social -->
+<section class="sf_social">
+    <div class="cntr">
+        <div class="sf_title sf_title--02">
+            <h2>Santa Fe Social Feed</h2>
+        </div>
+        <div class="sf_social--wrapper">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087380602469&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+</section>
+<!-- end of sta fe social -->
+
 <?php
 get_footer();

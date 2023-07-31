@@ -51,6 +51,7 @@
 // Ordinances and Resolutions
 .sf_ord-reso {
     margin-top: -50px;
+    margin-bottom: 50px;
 }
 
 .sf_ord-reso--wrapper {
@@ -150,6 +151,188 @@
         transition: all .3s ease-in-out;
         &:hover {
             background-color: $theme-color;
+        }
+    }
+}
+
+// founding day 
+.sf_founding {
+    margin-bottom: 50px;
+}
+
+// upcoming events
+.sf_upcoming {
+    margin-bottom: 50px;
+}
+
+.sf_upcoming--list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sf_upcoming--link {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+        .sf_upcoming--img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.sf_upcoming--img {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    img {
+        transition: all .3s ease-in-out;
+    }
+}
+
+.sf_upcoming--card {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+}
+
+.sf_upcoming--content {
+    padding: 15px 15px;
+    text-align: center;
+    h3 {
+        font-size: 20px;
+        line-height: normal;
+        color: $heading-color;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}
+
+.sf_upcoming--button {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+// government policies
+.sf_gov {
+    margin-bottom: 50px;
+}
+
+.sf_gov--list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sf_gov--link {
+    text-decoration: none;
+    color: $heading-color;
+}
+
+.sf_gov--card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.sf_gov--img {
+    display: flex;
+    align-items: center;
+    img {
+        height: 64px;
+        width: 64px;
+        object-fit: contain;
+    }
+}
+
+.sf_gov--title {
+    flex: 1;
+    font-weight: 700;
+}
+
+// sta fe videos
+.sf_videos {
+    margin-bottom: 50px;
+}
+
+.sf_videos--list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sf_videos--link {
+    text-decoration: none;
+    color: $heading-color;
+}
+
+.sf_videos--card {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+}
+
+.sf_videos--title {
+    font-size: 22px;
+    line-height: normal;
+    padding: 20px 20px;
+    border-bottom: 1px solid #ccc;
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+}
+
+.sf_videos--footer {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    span {
+        font-size: 12px;
+    }
+}
+
+// social feeds 
+.sf_social {
+    margin-bottom: 50px;
+}
+
+// accomodations
+.sf_acc {
+    background-image: url(../img/accomo-bg.webp);
+    padding: 100px 0;
+}
+
+.sf_acc--button {
+    text-align: center;
+    a {
+        display: inline-block;
+        padding: 15px 15px;
+        max-width: 300px;
+        width: 100%;
+        color: $heading-color;
+        background-color: $white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $heading-color;
+            color: $white;
         }
     }
 }

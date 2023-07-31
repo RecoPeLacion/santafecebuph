@@ -236,3 +236,97 @@ function executive_order_custom_posts() {
 	register_post_type( 'executive-order', $args );
 }
 add_action( 'init', 'executive_order_custom_posts', 0 );
+
+
+
+
+// Government Policies Post Type
+function government_policies_custom_posts() {
+	$labels = array(
+		'name'                => __( 'Government Policies' ),
+		'singular_name'       => __( 'Government Policies'),
+		'menu_name'           => __( 'Government Policies'),
+		'parent_item_colon'   => __( 'Parent Government Policies'),
+		'all_items'           => __( 'All Government Policies'),
+		'view_item'           => __( 'View Government Policies'),
+		'add_new_item'        => __( 'Add New Government Policies'),
+		'add_new'             => __( 'Add New'),
+		'edit_item'           => __( 'Edit Government Policies'),
+		'update_item'         => __( 'Update Government Policies'),
+		'search_items'        => __( 'Search Government Policies'),
+		'not_found'           => __( 'Not Found'),
+		'not_found_in_trash'  => __( 'Not found in Trash')
+	);
+	$args = array(
+		'label'               => __( 'Government Policies'),
+		'description'         => __( 'Best Government Policies'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon' 		=> 'dashicons-networking',
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('tag', 'government-policies-category'),
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+			'slug' => 'government-policies',
+			'with_front' => true
+		)
+);
+	register_post_type( 'government-policies', $args );
+}
+add_action( 'init', 'government_policies_custom_posts', 0 );
+
+
+// Videos Post Type
+function videos_custom_posts() {
+	$labels = array(
+		'name'                => __( 'Latest Videos' ),
+		'singular_name'       => __( 'Latest Videos'),
+		'menu_name'           => __( 'Latest Videos'),
+		'parent_item_colon'   => __( 'Parent Latest Videos'),
+		'all_items'           => __( 'All Latest Videos'),
+		'view_item'           => __( 'View Latest Videos'),
+		'add_new_item'        => __( 'Add New Latest Videos'),
+		'add_new'             => __( 'Add New'),
+		'edit_item'           => __( 'Edit Latest Videos'),
+		'update_item'         => __( 'Update Latest Videos'),
+		'search_items'        => __( 'Search Latest Videos'),
+		'not_found'           => __( 'Not Found'),
+		'not_found_in_trash'  => __( 'Not found in Trash')
+	);
+	$args = array(
+		'label'               => __( 'Latest Videos'),
+		'description'         => __( 'Best Latest Videos'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon' 		=> 'dashicons-format-video',
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('tag', 'videos-category'),
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+			'slug' => 'videos',
+			'with_front' => true
+		)
+);
+	register_post_type( 'videos', $args );
+}
+add_action( 'init', 'videos_custom_posts', 0 );
