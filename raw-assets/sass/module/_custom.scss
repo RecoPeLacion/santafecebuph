@@ -86,6 +86,10 @@
 }
 
 // card
+.sf_page--section {
+    background-color: #EFEFEF;
+}
+
 .card_list {
     background-color: $white;
     padding: 20px 20px;
@@ -153,6 +157,77 @@
             background-color: $theme-color;
         }
     }
+}
+
+.sf_page--table-wrapper {
+    overflow: auto;
+}
+
+.card_table {
+    border-spacing: 0 20px;
+    border: 0;
+    overflow: auto;
+    border-collapse: inherit;
+    @media screen and (max-width: 1140px) {
+        width: 1040px;
+    }
+}
+
+.card_table th {
+    color: #032A51;
+    border: 0;
+}
+
+.card_table tbody {
+    background-color: #fff;
+}
+
+.card_table td, .card_table th {
+    padding: 15px 15px;
+    text-align: center;
+    border: 0;
+    vertical-align: middle;
+}
+
+.card_list_inner_img_wrap {
+    text-align: center;
+    width: 170px;
+}
+
+.card_list_inner_img {
+    margin-bottom: 15px;
+}
+
+.card_list_inner_img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card_list_inner_img_wrap h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.card_list_innner_button a svg {
+    font-size: 25px;
+}
+
+.card_list_innner_button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.card_list_innner_button {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
 }
 
 // founding day 
@@ -340,5 +415,228 @@
             background-color: $heading-color;
             color: $white;
         }
+    }
+}
+
+// page barangay
+.sf_page--barangay-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.sf_page--barangay--card {
+    position: relative;
+    h3 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $white;
+        display: none;
+    }
+}
+
+.sf_page--barangay-img {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    img {
+        transition: all .3s ease-in-out;
+        width: 100%;
+    }
+}
+
+.sf_page--barangay--link {
+    &:hover {
+        .sf_page--barangay-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// councilor
+.sf_page--councilor-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 350px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sf_page--councilor-img {
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+.sf_single--councilor-card {
+    box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.2);
+    background-color: $white;
+    padding: 30px 30px;
+}
+
+.sf_single--councilor-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    @media screen and (max-width: 767px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.sf_single--councilor-col-03 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.sf_single--councilor-col-07 {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.sf_single--councilor-img {
+    img {
+        width: 100%;
+    }
+}
+
+.sf_single--councilor-title {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #6b6b6b;
+    h1 {
+        font-size: 30px;
+        line-height: normal;
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.sf_single--councilor-desc {
+    padding: 30px 0;
+}
+
+.sf_single--councilor-desc-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 400px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    small {
+        display: block;
+        font-size: 12px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.sf_single--councilor-content {
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.sf_single--councilor-attendance {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    li {
+        &:nth-child(2) {
+            .sf_single--councilor-attendance-card {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #5DDCFF 0%, #38B6FE 100%);
+                color: #fff;
+                span {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .sf_single--councilor-attendance-card {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #2DE43F 0%, #5EFC9F 100%);
+                color: #fff;
+                span {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        &:nth-child(4) {
+            .sf_single--councilor-attendance-card {
+                background-color: transparent;
+                background-image: linear-gradient(9deg, #FE5538 0%, #FF9E60 100%);
+                color: #fff;
+                span {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.sf_single--councilor-attendance-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+    border-radius: 10px;
+    span {
+        display: block;
+        border-bottom: 1px solid #ccc;
+        font-size: 12px;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+    }
+    h3 {
+        font-size: 50px;
+        line-height: normal;
     }
 }
