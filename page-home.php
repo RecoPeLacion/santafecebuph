@@ -175,15 +175,21 @@ get_header();
             <?php if ( $government_vid->have_posts() ) : ?>
                 <?php while ( $government_vid->have_posts() ) : $government_vid->the_post(); ?>
                 <li class="sf_videos--item">
-                    <a href="#" class="sf_videos--link">
+                    <a href="#" class="sf_videos--link sf_videos--openModal" data-modal="popup-video-<?php the_ID(); ?>">
                         <div class="sf_videos--card">
                             <h3 class="sf_videos--title"><?php the_title(); ?></h3>
                             <div class="sf_videos--footer">
                                 <span class="sf_videos--author">Admin</span>
-                                <span class="sf_videos--date">June 9, 2023</span>
+                                <span class="sf_videos--date"><?php the_date(); ?></span>
                             </div>
                         </div>
                     </a>
+                    <div id="popup-video-<?php the_ID(); ?>" class="modalVideo">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/w7sm6lY4u_k?list=RDEMCzsX-dB8k_miztMg5jkGZg" title="<?php the_title(); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </li>
                 <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
