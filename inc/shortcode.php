@@ -40,12 +40,12 @@ function ordinances_shortcode( $atts ) {
                                              ?>
                                              <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
                                              <?php else: ?>
-                                                 <p>No Image</p>
+                                                <img src="<?php echo get_template_directory_uri()?>/assets/img/prof.png" alt="">
                                              <?php endif; ?>
                                          </div>
                                          <div class="card_list_content">
-                                             <h3>Hon. <?php the_title(); ?></h3>
-                                             <p><?php the_content(); ?></p>
+                                             <h3>Hon. <?php the_field('author'); ?></h3>
+                                             <p><?php the_title(); ?></p>
                                          </div>
                                      </div>
                                  </div>
@@ -101,10 +101,10 @@ function ordinances_shortcode( $atts ) {
                                              ?>
                                              <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
                                              <?php else: ?>
-                                                 <p>No Image</p>
+                                                <img src="<?php echo get_template_directory_uri()?>/assets/img/prof.png" alt="">
                                              <?php endif; ?>
                                          </div>
-                                         <h3>Hon. <?php the_title(); ?></h3>
+                                         <h3>Hon. <?php the_field('author'); ?></h3>
                                      </div>
                                  </td>
                                  <td>
@@ -114,7 +114,7 @@ function ordinances_shortcode( $atts ) {
                                  </td>
                                  <td>
                                      <div class="card_list_inner_title">
-                                         <span><?php the_content(); ?></span>
+                                         <span><?php the_title(); ?></span>
                                      </div>
                                  </td>
                                  <td>
@@ -198,12 +198,12 @@ function resolutions_shortcode( $atts ) {
                                              ?>
                                              <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
                                              <?php else: ?>
-                                                 <p>No Image</p>
+                                                <img src="<?php echo get_template_directory_uri()?>/assets/img/prof.png" alt="">
                                              <?php endif; ?>
                                          </div>
                                          <div class="card_list_content">
-                                             <h3>Hon. <?php the_title(); ?></h3>
-                                             <p><?php the_content(); ?></p>
+                                             <h3>Hon. <?php the_field('author'); ?></h3>
+                                             <p><?php the_title(); ?></p>
                                          </div>
                                      </div>
                                  </div>
@@ -259,10 +259,10 @@ function resolutions_shortcode( $atts ) {
                                              ?>
                                              <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
                                              <?php else: ?>
-                                                 <p>No Image</p>
+                                                <img src="<?php echo get_template_directory_uri()?>/assets/img/prof.png" alt="">
                                              <?php endif; ?>
                                          </div>
-                                         <h3>Hon. <?php the_title(); ?></h3>
+                                         <h3>Hon. <?php the_field('author'); ?></h3>
                                      </div>
                                  </td>
                                  <td>
@@ -272,7 +272,7 @@ function resolutions_shortcode( $atts ) {
                                  </td>
                                  <td>
                                      <div class="card_list_inner_title">
-                                         <span><?php the_content(); ?></span>
+                                         <span><?php the_title(); ?></span>
                                      </div>
                                  </td>
                                  <td>
