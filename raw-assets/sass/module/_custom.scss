@@ -566,6 +566,9 @@
 }
 
 .sf_single--councilor-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
     img {
         width: 100%;
     }
@@ -618,6 +621,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    margin-top: 30px;
     @media screen and (max-width: 600px) {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -661,8 +665,9 @@
 .sf_single--councilor-attendance-card {
     text-align: center;
     border: 1px solid #ccc;
-    padding: 20px 20px;
+    padding: 20px 10px;
     border-radius: 10px;
+    height: 100%;
     span {
         display: block;
         border-bottom: 1px solid #ccc;
@@ -671,7 +676,7 @@
         padding-bottom: 5px;
     }
     h3 {
-        font-size: 50px;
+        font-size: 30px;
         line-height: normal;
     }
 }

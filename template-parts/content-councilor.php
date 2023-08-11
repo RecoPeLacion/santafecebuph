@@ -25,6 +25,8 @@
                             <img src="<?php echo get_template_directory_uri()?>/assets/img/blog01.png" alt="">
                         <?php endif; ?>
                     </div>
+                    <h4>Brief Bio:</h4>
+                    <?php the_field('brief_bio'); ?>
                 </div>
                 <div class="sf_single--councilor-col-07">
                     <div class="sf_single--councilor-content">
@@ -53,35 +55,56 @@
                                     <small>Headquarters Address</small>
                                     <?php the_field('headquarters_office'); ?>
                                 </li>
+                                <li>
+                                    <small>Education</small>
+                                    <?php the_field('education'); ?>
+                                </li>
+                                <li>
+                                    <small>Work Experience</small>
+                                    <?php the_field('work_experience'); ?>
+                                </li>
+                                <li>
+                                    <small>Ordinances Authored</small>
+                                    <?php the_field('ordinances_authored'); ?>
+                                </li>
+                                <li>
+                                    <small>Resolutions Authored</small>
+                                    <?php the_field('resolutions_authored'); ?>
+                                </li>
                             </ul>
                         </div>
                         <div class="sf_single--councilor-title">
                             <h3>Attendance</h3>
                         </div>
-                        <p>12th City Council Session for 2022 - 2025</p>
                         <ul class="sf_single--councilor-attendance">
                             <li>
                                 <div class="sf_single--councilor-attendance-card">
-                                    <span>Total Sessions</span>
-                                    <h3><?php the_field('total_sessions'); ?></h3>
+                                    <span>Public Hearing</span>
+                                    <h3><?php the_field('public_hearing'); ?></h3>
                                 </div>
                             </li>
                             <li>
                                 <div class="sf_single--councilor-attendance-card">
-                                    <span>Sessions Left</span>
-                                    <h3><?php the_field('sessions_left'); ?></h3>
+                                    <span>Session Present</span>
+                                    <h3><?php the_field('session_present'); ?></h3>
                                 </div>
                             </li>
                             <li>
                                 <div class="sf_single--councilor-attendance-card">
-                                    <span>Present Days</span>
-                                    <h3><?php the_field('present_days'); ?></h3>
+                                    <span>Session Absent</span>
+                                    <h3><?php the_field('session_absent'); ?></h3>
                                 </div>
                             </li>
                             <li>
                                 <div class="sf_single--councilor-attendance-card">
-                                    <span>Absent Days</span>
-                                    <h3><?php the_field('absent_days'); ?></h3>
+                                    <span>Session in 3 Years</span>
+                                    <h3><?php the_field('session_in_3_years'); ?></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sf_single--councilor-attendance-card">
+                                    <span>Remaining Session</span>
+                                    <h3><?php the_field('remaining_session'); ?></h3>
                                 </div>
                             </li>
                         </ul>
