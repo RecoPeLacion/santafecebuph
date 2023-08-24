@@ -210,7 +210,7 @@
 
 .card_list_inner_img_wrap h3 {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal;
 }
 
@@ -233,9 +233,46 @@
     grid-gap: 15px;
 }
 
+.card_pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    .page-numbers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        &.current {
+            background-color: $theme-color;
+            color: $white;
+        }
+    }
+}
+
 // founding day 
 .sf_founding {
     margin-bottom: 50px;
+}
+
+.tick-label {
+    font-size:.375em;
+    text-align:center;
+}
+
+.tick-group {
+    margin:0 .25em;
+    text-align:center;
+}
+
+.sf_founding--counter {
+    .tick-credits {
+        display: none;
+    }
 }
 
 // upcoming events
@@ -730,3 +767,28 @@
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   }
+
+// timer
+.sf_time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sf_timer {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+    color: #fff;
+    width: 100px;
+}
+
+.sf_timer_num {
+    font-size: 50px;
+    line-height: normal;
+}

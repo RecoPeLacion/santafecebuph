@@ -56,6 +56,7 @@ add_action( 'admin_enqueue_scripts', 'theme_options_load_admin_scripts' );
 */
 function zeroten_styles(){
    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/base.min.css' );
+   wp_enqueue_style( 'flip', get_template_directory_uri() . '/assets/css/flip.min.css' );
    wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 add_action ('wp_enqueue_scripts', 'zeroten_styles');
@@ -69,5 +70,6 @@ add_action ('wp_enqueue_scripts', 'zeroten_styles');
 function zeroten_scripts(){
    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js' );
    wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/base.js', array( 'jquery' ), true, true );
+   wp_enqueue_script( 'flip-js', get_template_directory_uri() . '/assets/js/flip.min.js', array( 'jquery' ), true, true );
 }
 add_action ('wp_enqueue_scripts', 'zeroten_scripts');
