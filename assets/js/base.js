@@ -1,5 +1,17 @@
 (function($){
 
+    // slider
+    $('.sf_slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        autoplaySpeed: 5000,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+
     // hamburger menu
     $(".sf_main-header--hamburger").on('click', function(e) {
         e.preventDefault();

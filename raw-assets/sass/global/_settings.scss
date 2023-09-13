@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Oswald', sans-serif;
 
-$base-font-family: 'Raleway', sans-serif;
-$base-font-size: 15;
-$base-font-weight: normal;
-$base-line-height: 1.6em;
+$base-font-family: 'Roboto', sans-serif;
+$base-font-size: 16;
+$base-font-weight: 300;
+$base-line-height: 24px;
 $base-color: #4b4858;
 $base-bg: #fff;
 $black: #000;

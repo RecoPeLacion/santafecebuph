@@ -79,3 +79,97 @@
         }
     }
 }
+
+.sf_newFooter {
+    background-color: #0B0D17;
+    padding: 50px 0;
+}
+
+.sf_newFooterRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sf_newFooterLogo {
+    img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+.sf_newFooterLinkWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sf_newFooterContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    a {
+        color: #0170B9;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .sf_footerIgov {
+        p {
+            font-size: 14px;
+            a {
+                color: #90e19b;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.sf_newFooterLinksCard {
+    h3 {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+.sf_newFooterGov {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    @media screen and (max-width: 767px) {
+        align-items: start;
+    }
+    img {
+        width: 100%;
+        max-width: 130px;
+    }
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 12px;
+        color: #7a7a7a;
+    }
+}

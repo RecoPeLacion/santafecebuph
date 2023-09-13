@@ -56,7 +56,7 @@
 <body <?php body_class(); ?>>
 
 <header class="sf_main-header">
-	<div class="sf_main-header--top">
+	<!-- <div class="sf_main-header--top">
 		<div class="cntr">
 			<div class="sf_main-header--top-wrapper">
 				<div class="sf_main-header--top-button">
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="sf_main-header--nav">
 		<div class="cntr">
 			<div class="sf_main-header--nav-wrapper">
