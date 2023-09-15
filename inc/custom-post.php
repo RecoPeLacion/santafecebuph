@@ -7,6 +7,52 @@
  * @package TEMPLATE NAME
  */
 
+  // Offices Post Type
+function offices_custom_posts() {
+	$labels = array(
+		'name'                => __( 'Offices' ),
+		'singular_name'       => __( 'Offices'),
+		'menu_name'           => __( 'Offices'),
+		'parent_item_colon'   => __( 'Parent Offices'),
+		'all_items'           => __( 'All Offices'),
+		'view_item'           => __( 'View Offices'),
+		'add_new_item'        => __( 'Add New Latest Offices'),
+		'add_new'             => __( 'Add New'),
+		'edit_item'           => __( 'Edit Offices'),
+		'update_item'         => __( 'Update Offices'),
+		'search_items'        => __( 'Search Offices'),
+		'not_found'           => __( 'Not Found'),
+		'not_found_in_trash'  => __( 'Not found in Trash')
+	);
+	$args = array(
+		'label'               => __( 'Offices'),
+		'description'         => __( 'Best Offices'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon' 		=> 'dashicons-calendar',
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('tag', 'offices-category'),
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+			'slug' => 'offices',
+			'with_front' => true
+		)
+);
+	register_post_type( 'offices', $args );
+}
+add_action( 'init', 'offices_custom_posts', 0 );
+
+
  // Municipality Resolutions Post Type
 function resolutions_custom_posts() {
 	$labels = array(

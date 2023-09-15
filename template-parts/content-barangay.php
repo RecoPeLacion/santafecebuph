@@ -9,15 +9,24 @@
 
 ?>
 
-<section class="sf_single--barangay-banner sf_padding_section">
+<section class="sf_officeBanner sf_padding_section">
     <div class="cntr">
-        <h1><?php the_title(); ?></h1>
+        <div class="sf_officeBannerWrap">
+            <div class="sf_officeBannerTitle">
+                <h1>
+                    Barangay <?php the_title(); ?>
+                </h1>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae modi cumque magnam nemo nobis dolore, perferendis quam doloribus iusto sit accusamus animi fugit repellat at sunt pariatur nisi perspiciatis.
+            </p>
+        </div>
     </div>
 </section>
 
 <section class="sf_single--barangay-content sf_padding_section">
     <div class="cntr">
-        <h3>About <?php the_title(); ?></h3>
+        <h3>About Barangay <?php the_title(); ?></h3>
         <?php the_content(); ?>
     </div>
 </section>

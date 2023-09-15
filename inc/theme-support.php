@@ -55,3 +55,16 @@ function wp_pagination() {
                 echo '</ul></div>';
     }
 }
+
+/*
+ * ----------------------------------------------------------------------------------------
+ *  SEARCH QUERY
+ * ----------------------------------------------------------------------------------------
+ */
+function custom_search_filter($query) {
+    if ($query->is_search && !is_admin()) {
+        $query->set('post_type', array('post', 'offices', 'resolutions', 'ordinances', 'coucilor', 'barangay'));
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'custom_search_filter');

@@ -1,5 +1,12 @@
 (function($){
 
+    // trigger modal
+    $('.sf_searchToggle').on('click', function(e) {
+        e.preventDefault();
+        $('.sf_searchFormModal').toggleClass('is-visible');
+        $('body').toggleClass('ov-hidden');
+    });
+
     // slider
     $('.sf_slider').slick({
         dots: false,

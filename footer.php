@@ -105,7 +105,6 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 							<img src="<?php echo get_template_directory_uri()?>/assets/img/coa-footerv2.svg" alt="Governtment Logo">
 							<h3>Republic of the Philippines</h3>
 							<p>All content is in the public domain unless otherwise stated.</p>
-							<img src="<?php echo get_template_directory_uri()?>/assets/img/igov-logo-transparent-1-150x63-1.png" alt="" class="igov">
 						</div>
 
 					</div>

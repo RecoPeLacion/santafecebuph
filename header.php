@@ -56,22 +56,6 @@
 <body <?php body_class(); ?>>
 
 <header class="sf_main-header">
-	<!-- <div class="sf_main-header--top">
-		<div class="cntr">
-			<div class="sf_main-header--top-wrapper">
-				<div class="sf_main-header--top-button">
-					<a href="#">How can we serve you better?</a>
-				</div>
-				<h4 class="sf_main-header--top-title">Municipality of Santa Fe LGU Legislative Office</h4>
-				<div class="sf_main-header--top-phone">
-					<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-						424-1234
-					</a>
-				</div>
-			</div>
-		</div>
-	</div> -->
 	<div class="sf_main-header--nav">
 		<div class="cntr">
 			<div class="sf_main-header--nav-wrapper">
@@ -95,9 +79,22 @@
 				</div>
 				<div class="sf_main-header--icon-wrapper">
 					<div class="sf_main-header--search">
-						<a href="#">
+						<a href="#" class="sf_searchToggle">
 							<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
 						</a>
+						<div class="sf_searchFormModal">
+							<div class="sf_searchButton sf_searchToggle">
+								<svg viewBox="0 0 512 512" fill="#434d5d"> <path d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z" fillrule="evenodd"></path> </svg>
+							</div>
+							<div class="sf_searchWrapper">
+								<div class="sf_searchForm">
+									<form role="search" method="get" id="searchform" action="<?php echo esc_url(home_url('/')); ?>">
+										<input type="text" class="sf_searchField" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Search..." />
+										<input type="submit" class="sf_searchSubmit" id="searchsubmit" value="Search" />
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="sf_main-header--hamburger">
 						<a href="#">

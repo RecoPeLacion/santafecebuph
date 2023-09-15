@@ -58,7 +58,7 @@ get_header();
                     <small>Welcome to Santa Fe! Today is <?php echo date('l'); ?>, <?php echo date('F j, Y'); ?></small>
                     <h3>What's new in Santa Fe?</h3>
                     <div class="sf_what--new-vid">
-                        <iframe class="elementor-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Bantayan Island Travel Guide 2023 | Where To Eat, Stay? How To Get Here? Paradise of Northern Cebu" width="100%" height="380" src="https://www.youtube.com/embed/C6HBInrPEn0?controls=0&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=1&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fryanbalbuena.com&amp;widgetid=1" id="widget2"></iframe>
+                        <iframe class="elementor-video" frameborder="0" allowfullscreen="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Bantayan Island Travel Guide 2023 | Where To Eat, Stay? How To Get Here? Paradise of Northern Cebu" width="100%" height="380" src="https://www.youtube.com/embed/BwDtpKZ8B7Q?controls=0&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=1&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fryanbalbuena.com&amp;widgetid=1" id="widget2"></iframe>
                     </div>
                 </div>
             </div>
