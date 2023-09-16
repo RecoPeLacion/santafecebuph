@@ -163,13 +163,13 @@
 }
 
 .card_table {
-    border-spacing: 0 20px;
+    border-spacing: 0 20px !important;
     border: 0;
     overflow: auto;
     border-collapse: inherit;
     width: 100%;
     @media screen and (max-width: 1140px) {
-        width: 1040px;
+        width: 1040px !important;
     }
 }
 
@@ -1321,6 +1321,23 @@
         img {
             width: 100%;
         }
+    }
+    h3 {
+        font-size: 22px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    p {
+        img {
+            width: 100%;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: disc;
+        padding-left: 30px;
     }
 }
 

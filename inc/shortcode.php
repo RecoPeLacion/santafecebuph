@@ -17,7 +17,8 @@ function ordinances_shortcode( $atts ) {
  
     $args = array(
         'post_type'      => 'ordinances',
-        'posts_per_page' => intval( $atts['posts_per_page'] ),
+        'posts_per_page' => -1,
+        // 'posts_per_page' => intval( $atts['posts_per_page'] ),
         'paged'          => $paged,
     );
     if ( is_front_page() ) {
@@ -70,7 +71,7 @@ function ordinances_shortcode( $atts ) {
  
              ?>
  
-                 <table class="card_table">
+                 <table class="card_table" id="ordTable">
  
                      <thead>
                          <tr>
@@ -175,7 +176,8 @@ function resolutions_shortcode( $atts ) {
  
     $args = array(
         'post_type'      => 'resolutions',
-        'posts_per_page' => intval( $atts['posts_per_page'] ),
+        'posts_per_page' => -1,
+        // 'posts_per_page' => intval( $atts['posts_per_page'] ),
         'paged'          => $paged,
     );
     if ( is_front_page() ) {
@@ -228,7 +230,7 @@ function resolutions_shortcode( $atts ) {
  
              ?>
  
-                 <table class="card_table">
+                 <table class="card_table" id="resoTable">
  
                      <thead>
                          <tr>
@@ -304,7 +306,7 @@ function resolutions_shortcode( $atts ) {
                  </tbody>
                  </table>
  
-                 <div class="card_pagination">
+                 <!-- <div class="card_pagination">
                      <?php 
                          echo paginate_links( array(
                              'total'   => $query->max_num_pages,
@@ -313,7 +315,7 @@ function resolutions_shortcode( $atts ) {
                              'next_text' => __('<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>'),
                          ) );
                      ?> 
-                 </div>
+                 </div> -->
              
              <?php
          }

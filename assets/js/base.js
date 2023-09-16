@@ -1,5 +1,14 @@
 (function($){
 
+    // data table
+    let table = new DataTable('#resoTable', {
+        responsive: true
+    });
+
+    let table2 = new DataTable('#ordTable', {
+        responsive: true
+    });
+
     // trigger modal
     $('.sf_searchToggle').on('click', function(e) {
         e.preventDefault();

@@ -59,6 +59,7 @@ function zeroten_styles(){
    wp_enqueue_style( 'flip', get_template_directory_uri() . '/assets/css/flip.min.css' );
    wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/slick.css' );
    wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/assets/css/slick-theme.css' );
+   wp_enqueue_style( 'datatable-css', 'https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css' );
    wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 add_action ('wp_enqueue_scripts', 'zeroten_styles');
@@ -72,7 +73,9 @@ add_action ('wp_enqueue_scripts', 'zeroten_styles');
 function zeroten_scripts(){
    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js' );
    wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array( 'jquery' ), true, true );
+   wp_enqueue_script( 'datatable-js', 'https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js', array( 'jquery' ), true, true );
    wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/base.js', array( 'jquery' ), true, true );
    wp_enqueue_script( 'flip-js', get_template_directory_uri() . '/assets/js/flip.min.js', array( 'jquery' ), true, true );
+
 }
 add_action ('wp_enqueue_scripts', 'zeroten_scripts');
