@@ -145,6 +145,95 @@ function ordinances_custom_posts() {
 }
 add_action( 'init', 'ordinances_custom_posts', 0 );
 
+// Mayor Post Type
+function mayor_custom_posts() {
+	$labels = array(
+		'name'                => __( 'Mayor' ),
+		'singular_name'       => __( 'Mayor'),
+		'menu_name'           => __( 'Mayor'),
+		'parent_item_colon'   => __( 'Parent Mayor'),
+		'all_items'           => __( 'All Mayor'),
+		'view_item'           => __( 'View Mayor'),
+		'add_new_item'        => __( 'Add New Mayor'),
+		'add_new'             => __( 'Add New'),
+		'edit_item'           => __( 'Edit Mayor'),
+		'update_item'         => __( 'Update Mayor'),
+		'search_items'        => __( 'Search Mayor'),
+		'not_found'           => __( 'Not Found'),
+		'not_found_in_trash'  => __( 'Not found in Trash')
+	);
+	$args = array(
+		'label'               => __( 'Mayor'),
+		'description'         => __( 'Best Mayor'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon' 		=> 'dashicons-groups',
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('tag', 'mayor-category'),
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+			'slug' => 'mayor',
+			'with_front' => true
+		)
+);
+	register_post_type( 'mayor', $args );
+}
+add_action( 'init', 'mayor_custom_posts', 0 );
+
+// Vice Mayor Post Type
+function vice_mayor_custom_posts() {
+	$labels = array(
+		'name'                => __( 'Vice Mayor' ),
+		'singular_name'       => __( 'Vice Mayor'),
+		'menu_name'           => __( 'Vice Mayor'),
+		'parent_item_colon'   => __( 'Parent Vice Mayor'),
+		'all_items'           => __( 'All Vice Mayor'),
+		'view_item'           => __( 'View Vice Mayor'),
+		'add_new_item'        => __( 'Add New Vice Mayor'),
+		'add_new'             => __( 'Add New'),
+		'edit_item'           => __( 'Edit Vice Mayor'),
+		'update_item'         => __( 'Update Vice Mayor'),
+		'search_items'        => __( 'Search Vice Mayor'),
+		'not_found'           => __( 'Not Found'),
+		'not_found_in_trash'  => __( 'Not found in Trash')
+	);
+	$args = array(
+		'label'               => __( 'Vice Mayor'),
+		'description'         => __( 'Best Vice Mayor'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon' 		=> 'dashicons-groups',
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('tag', 'vice-mayor-category'),
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+			'slug' => 'vice-mayor',
+			'with_front' => true
+		)
+);
+	register_post_type( 'vice-mayor', $args );
+}
+add_action( 'init', 'vice_mayor_custom_posts', 0 );
 
 // Councilor Post Type
 function councilor_custom_posts() {
