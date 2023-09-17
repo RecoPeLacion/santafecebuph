@@ -831,12 +831,16 @@
     &::before {
         content: "";
         position: absolute;
-        left: 0;
         top: 0;
-        right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0,0.5);
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+        height: 700px;
         z-index: 1;
+        @media screen and (max-width: 767px) {
+            height: 500px;
+        }
     }
 }
 
@@ -854,6 +858,10 @@
     align-items: center;
     z-index: 2;
     padding: 0 15px;
+    .sf_slider_img {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .sf_slider_content {

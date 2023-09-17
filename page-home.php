@@ -34,14 +34,7 @@ get_header();
         <div class="sf_slider_item">
             <div class="sf_slider_card">
                 <div class="sf_slider_img">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/img/slide01.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="sf_slider_item">
-            <div class="sf_slider_card">
-                <div class="sf_slider_img">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/img/slide02.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/img/mayor_banner.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -262,7 +255,7 @@ get_header();
         </div>
         <div class="sf_electedWrapper">
             <div class="sf_electedImg">
-                <img src="<?php echo get_template_directory_uri()?>/assets/img/elected.jpg" alt="FrontLine Image">
+                <img src="<?php echo get_template_directory_uri()?>/assets/img/officialsfin.jpg" alt="FrontLine Image">
             </div>
         </div>
         <div class="sf_newButton">
