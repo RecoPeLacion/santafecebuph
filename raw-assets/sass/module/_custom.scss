@@ -479,7 +479,7 @@
 // page barangay
 .sf_page--barangay-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     @media screen and (max-width: 767px) {
         grid-template-columns: repeat(3, 1fr);
@@ -1204,11 +1204,22 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0B0D17;
+    border-radius: 100%;
     img {
         width: 80px;
         height: 80px;
         object-fit: contain;
 
+    }
+    svg {
+        width: 30px;
+        height: 30px;
+        fill: #fff;
     }
 }
 
@@ -1253,6 +1264,22 @@
     position: relative;
     z-index: 1;
     padding: 100px 0;
+    &.sf_tourBanner {
+        &::before {
+            background-color: transparent;
+        }
+        .sf_officeBannerTitle {
+            h1 {
+                color: #0b0d17;
+            }
+        }
+        .sf_officeBannerWrap {
+            p {
+                color: #0b0d17;
+                font-weight: 400;
+            }
+        }
+    }
     @media screen and (max-width: 767px) {
         padding: 50px 0;
     }
@@ -1510,6 +1537,70 @@
             @media screen and (max-width: 767px) {
                 font-size: 24px;
             }
+        }
+    }
+}
+
+.sf_pageTourList {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    .sf_page--tourism-item {
+        a {
+            color: #0b0d17;
+            &:hover {
+                .sf_pageTourButton {
+                    background-color: #0B0D17;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .sf_pageTourCard {
+        position: relative;
+    }
+    .sf_pageTourImg {
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    .sf_pageTourContent {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        @media screen and (max-width: 767px) {
+            gap: 10px;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: normal;
+            @media screen and (max-width: 767px) {
+                font-size: 25px;
+            }
+        }
+    }
+    .sf_pageTourButton {
+        display: inline-block;
+        padding: 10px 30px;
+        border: 2px solid #0b0d17;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 5px;
+        font-size: 14px;
+        transition: all .3s ease-in-out;
+        @media screen and (max-width: 767px) {
+            padding: 5px 30px;
         }
     }
 }

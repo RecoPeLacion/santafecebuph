@@ -18,7 +18,7 @@
 	$copyright = esc_attr( get_option( 'copyright_url' ) );
 ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="description" content="">

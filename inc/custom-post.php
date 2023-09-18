@@ -326,6 +326,51 @@ function barangay_custom_posts() {
 add_action( 'init', 'barangay_custom_posts', 0 );
 
 
+// Tourism Post Type
+function tourism_custom_posts() {
+	$labels = array(
+		'name'                => __( 'Tourism' ),
+		'singular_name'       => __( 'Tourism'),
+		'menu_name'           => __( 'Tourism'),
+		'parent_item_colon'   => __( 'Parent Tourism'),
+		'all_items'           => __( 'All Tourism'),
+		'view_item'           => __( 'View Tourism'),
+		'add_new_item'        => __( 'Add New Tourism'),
+		'add_new'             => __( 'Add New'),
+		'edit_item'           => __( 'Edit Tourism'),
+		'update_item'         => __( 'Update Tourism'),
+		'search_items'        => __( 'Search Tourism'),
+		'not_found'           => __( 'Not Found'),
+		'not_found_in_trash'  => __( 'Not found in Trash')
+	);
+	$args = array(
+		'label'               => __( 'Tourism'),
+		'description'         => __( 'Best Tourism'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon' 		=> 'dashicons-admin-multisite',
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('tag', 'tourism-category'),
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite' => array(
+			'slug' => 'tourism',
+			'with_front' => true
+		)
+);
+	register_post_type( 'tourism', $args );
+}
+add_action( 'init', 'tourism_custom_posts', 0 );
+
 
 // Executive Order Post Type
 function executive_order_custom_posts() {

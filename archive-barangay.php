@@ -20,7 +20,7 @@ get_header();
                 if ( get_query_var('paged') ) { $paged = get_query_var('paged'); } else if ( get_query_var('page') ) {$paged = get_query_var('page'); } else {$paged = 1; }
                 $temp = $wp_query;
                 $wp_query = null;
-                $args = array( 'post_type' => 'barangay', 'order'=>'DESC', 'posts_per_page' => 8, 'paged' => $paged);
+                $args = array( 'post_type' => 'barangay', 'order'=>'DESC', 'posts_per_page' => -1, 'paged' => $paged);
                 $wp_query = new WP_Query();
                 $wp_query->query( $args );
                 while ($wp_query->have_posts()) : $wp_query->the_post();
@@ -44,7 +44,6 @@ get_header();
                         </a>
                     </li>
                 <?php endwhile; ?>
-            <?php wp_pagination(); ?>
         </ul>
     </div>
 </section>

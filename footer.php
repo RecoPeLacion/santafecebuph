@@ -46,12 +46,12 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 							<div class="sf_newFooterLogo">
 								<img src="<?php echo get_template_directory_uri()?>/assets/img/Santa-Fe-Cebu-Agency-Name-1.png" alt="Santa Fe Logo">
 							</div>
-							<h3>Official Website of the City Government of Santa Fe</h3>
+							<h3>Official Website of the Municipality of Santa Fe</h3>
 							<a href="#">About this website</a>
 							<div class="sf_footerIgov">
 								<p>
 									iGovernance Team
-									<a href="#">City Government of Santa Fe</a>
+									<a href="#">Municipality of Santa Fe</a>
 								</p>
 							</div>
 						</div>
@@ -59,7 +59,7 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 					<div class="sf_newFooterCol">
 						<div class="sf_newFooterLinkWrap">
 							<div class="sf_newFooterLinksCard">
-								<h3>City Government Links</h3>
+								<h3>Municipality Links</h3>
 								<ul>
 									<li>
 										<a href="#">Visitors</a>
@@ -79,7 +79,7 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 								</ul>
 							</div>
 							<div class="sf_newFooterLinksCard">
-								<h3>City Government Links</h3>
+								<h3>Municipality Links</h3>
 								<ul>
 									<li>
 										<a href="#">Visitors</a>
