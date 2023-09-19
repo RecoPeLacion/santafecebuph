@@ -1102,10 +1102,18 @@
 .sf_frontLineListImg {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
     overflow: hidden;
     img {
-        width: 100%;
+        width: 200px;
+        height: 200px;
         transition: all .3s ease-in-out;
+    }
+    svg {
+        width: 150px;
+        height: 150px;
+        fill: #575757;
     }
 }
 
@@ -1366,6 +1374,24 @@
 }
 
 .sf_officeContent {
+    overflow: auto;
+    table {
+        width: 100%;
+        @media screen and (max-width: 767px) {
+            width: 1000px;
+        }
+        td, th {
+            border: 1px solid #ccc;
+            padding: 5px 5px;
+            font-size: 12px;
+        }
+    }
+    .wp-caption {
+        width:  100% !important;
+        img {
+            width: 100%;
+        }
+    }
     .sf_officeContentImg {
         margin-bottom: 30px;
         img {

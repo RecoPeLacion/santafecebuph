@@ -84,42 +84,8 @@ get_header();
                     </li>
                 </ul>
                 <div class="sf_what--new-news">
-                    <h3>Latest News</h3>
-                    <ul class="sf_what--news-list">
-                        <?php
-                        // upcoming events query
-                        $upcoming_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>5, 'order'=> 'DESC')); ?>
-                        <?php if ( $upcoming_query->have_posts() ) : ?>
-                            <?php while ( $upcoming_query->have_posts() ) : $upcoming_query->the_post(); ?>
-                            <li>
-                                <a href="<?php the_permalink(); ?>">
-                                    <div class="sf_what--news-card">
-                                        <div class="sf_what--news-img">
-                                            <?php if(has_post_thumbnail()): ?>
-                                                <?php
-                                                    $thumb_id = get_post_thumbnail_id(get_the_ID());
-                                                    $alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
-                                                ?>
-                                                <img title="<?php the_title(); ?>" alt="<?php echo $alt; ?>" class="wp-post-image is-wide" src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
-                                            <?php else: ?>
-                                                <img src="<?php echo get_template_directory_uri()?>/assets/img/blog01.png" alt="">
-                                            <?php endif; ?>
-                                        </div>
-                                        <div class="sf_what--news-content">
-                                            <h3><?php the_title(); ?></h3>
-                                            <p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg> <?php the_date(); ?>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                        <?php else : ?>
-                            <h4 class="no-post tc"><?php _e( 'Coming Soon...' ); ?></h4>
-                        <?php endif; ?>
-                    </ul>
+                    <h3>Latest Feeds</h3>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100087380602469%26ref%3Dembed_page&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
         </div>
@@ -142,7 +108,7 @@ get_header();
                 <a href="#">
                     <div class="sf_frontLineListCard">
                         <div class="sf_frontLineListImg">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8H32c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9V104l4.4-1.6L240.1 4.2zM64 224h64V416h40V224h64V416h48V224h64V416h40V224h64V420.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512H32c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1V224z"/></svg>
                         </div>
                         <div class="sf_frontLineContent">
                             <h3>Municipal Mayor's Office</h3>
@@ -155,7 +121,7 @@ get_header();
                 <a href="#">
                     <div class="sf_frontLineListCard">
                         <div class="sf_frontLineListImg">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32V448c0 35.3 28.7 64 64 64H448.5c35.5 0 64.2-28.8 64-64.3l-.7-160.2h32zM256 208c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H320v48c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V320H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h48V208z"/></svg>
                         </div>
                         <div class="sf_frontLineContent">
                             <h3>Municipal Health Office</h3>
@@ -168,46 +134,7 @@ get_header();
                 <a href="#">
                     <div class="sf_frontLineListCard">
                         <div class="sf_frontLineListImg">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                        </div>
-                        <div class="sf_frontLineContent">
-                            <h3>Senior Citizens</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="sf_frontLineListCard">
-                        <div class="sf_frontLineListImg">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                        </div>
-                        <div class="sf_frontLineContent">
-                            <h3>Senior Citizens</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="sf_frontLineListCard">
-                        <div class="sf_frontLineListImg">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                        </div>
-                        <div class="sf_frontLineContent">
-                            <h3>Senior Citizens</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="sf_frontLineListCard">
-                        <div class="sf_frontLineListImg">
-                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M272 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm-8 187.3l47.4 57.1c11.3 13.6 31.5 15.5 45.1 4.2s15.5-31.5 4.2-45.1l-73.7-88.9c-18.2-22-45.3-34.7-73.9-34.7H177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V235.3zM352 376c0-4.4 3.6-8 8-8s8 3.6 8 8V488c0 13.3 10.7 24 24 24s24-10.7 24-24V376c0-30.9-25.1-56-56-56s-56 25.1-56 56v8c0 13.3 10.7 24 24 24s24-10.7 24-24v-8z"/></svg>
                         </div>
                         <div class="sf_frontLineContent">
                             <h3>Senior Citizens</h3>
@@ -218,7 +145,7 @@ get_header();
             </li>
         </ul>
         <div class="sf_newButton">
-            <a href="#">
+            <a href="<?php bloginfo('url'); ?>/offices">
                 View full list of services
             </a>
         </div>
@@ -242,7 +169,7 @@ get_header();
             </div>
         </div>
         <div class="sf_newButton">
-            <a href="#">
+            <a href="<?php bloginfo('officials'); ?>">
                 KNOW MORE ABOUT THE MAYOR AND THE CITY COUNCIL
             </a>
         </div>
