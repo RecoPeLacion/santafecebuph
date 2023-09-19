@@ -1343,11 +1343,14 @@
         .sf_officeImg {
             display: flex;
             align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
             overflow: hidden;
+            background-color: #EDEDED;
             img {
-                width: 100%;
-                height: 225px;
-                object-fit: cover;
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
                 transition: all .3s ease-in-out;
             }
         }

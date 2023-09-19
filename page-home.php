@@ -22,7 +22,7 @@ get_header();
             <h1>
                 Welcome to Santa Fe Web Portal
             </h1>
-            <p>Santa Fe, officially the Municipality of Santa Fe, is a 5th class municipality in the province of Cebu, Philippines. According to the 2020 census, it has a population of 34,471 people.</p>
+            <p>Santa Fe, officially the Municipality of Santa Fe, is a 4th class municipality in the province of Cebu, Philippines. According to the 2020 census, it has a population of 34,471 people.</p>
             <div class="sf_slider_button">
                 <a href="#">
                     Mayor's Office
@@ -132,7 +132,7 @@ get_header();
     <div class="cntr">
         <div class="sf_newTitle">
             <h4 class="sf_subTitle">CITIZENS’ CHARTER ONLINE</h4>
-            <h3 class="sf_mainTitle">FRONTLINE SERVICES</h3>
+            <h3 class="sf_mainTitle">Santa Fe Services</h3>
             <p class="sf_subTagline">
                 Sed egestas consectetur dui, eget consequat magna. Sed magna sapien, iaculis eu felis non, mollis congue tortor. Aliquam posuere neque in ullamcorper pharetra. Vestibulum id risus pharetra, semper lorem sed, ultricies felis. Curabitur ac felis vitae quam maximus auctor. Aliquam ultricies, dolor eu luctus pellentesque, diam ipsum aliquam quam, sed porta orci erat quis sapien. Etiam lacinia blandit metus. In ultrices nibh in mi dapibus tempus. Nam a nunc quis ligula porta consequat. Proin venenatis, nibh ut maximus pellentesque, diam tellus vulputate orci, sit amet porttitor nunc justo ac elit. Donec ex urna, malesuada in consequat nec, sodales quis dolor. Maecenas sed velit laoreet, semper dui nec, pretium neque. Pellentesque accumsan leo vitae feugiat blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -177,71 +177,54 @@ get_header();
                     </div>
                 </a>
             </li>
+            <li>
+                <a href="#">
+                    <div class="sf_frontLineListCard">
+                        <div class="sf_frontLineListImg">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
+                        </div>
+                        <div class="sf_frontLineContent">
+                            <h3>Senior Citizens</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="sf_frontLineListCard">
+                        <div class="sf_frontLineListImg">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
+                        </div>
+                        <div class="sf_frontLineContent">
+                            <h3>Senior Citizens</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="sf_frontLineListCard">
+                        <div class="sf_frontLineListImg">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
+                        </div>
+                        <div class="sf_frontLineContent">
+                            <h3>Senior Citizens</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
         </ul>
         <div class="sf_newButton">
             <a href="#">
                 View full list of services
             </a>
         </div>
-        <div class="sf_onlineServices">
-            <div class="sf_newTitle">
-                <h3 class="sf_mainTitle">ONLINE SERVICES</h3>
-            </div>
-            <ul class="sf_onlineServicesList">
-                <li>
-                    <a href="#">
-                        <div class="sf_onlineServicesCard">
-                            <div class="sf_onlineServicesImg">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="sf_onlineServicesCard">
-                            <div class="sf_onlineServicesImg">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="sf_onlineServicesCard">
-                            <div class="sf_onlineServicesImg">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="sf_onlineServicesCard">
-                            <div class="sf_onlineServicesImg">
-                                <img src="<?php echo get_template_directory_uri()?>/assets/img/front.jpg" alt="FrontLine Image">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
     </div>
 </section>
 <!-- end of frontline -->
-
-<!-- census -->
-<section class="sf_census sf_padding_section">
-    <div class="cntr">
-        <div class="sf_newTitle">
-            <h3 class="sf_mainTitle">Census Population</h3>
-            <p class="sf_subTagline">
-                Sed egestas consectetur dui, eget consequat magna. Sed magna sapien, iaculis eu felis non, mollis congue tortor.
-            </p>
-        </div>
-    </div>
-</section>
-<!-- end of census -->
 
 <!-- elected -->
 <section class="sf_elected sf_padding_section">
@@ -250,7 +233,7 @@ get_header();
             <h4 class="sf_subTitle">YOUR ELECTED</h4>
             <h3 class="sf_mainTitle">CITY OFFICIALS</h3>
             <p class="sf_subTagline">
-                Meet the people mandated to lead the City Government and serve the people of Santa Fe.
+                Introducing the individuals entrusted with the responsibility of governing the municipality of Santa Fe, dedicated to serving its residents.
             </p>
         </div>
         <div class="sf_electedWrapper">
@@ -277,7 +260,7 @@ get_header();
             </p>
         </div>
         <div class="sf_mapWrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125221.28360466624!2d123.74827993281083!3d11.249261483739781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a87d5fc950c8fb%3A0x9dbab0f8f9885ad1!2sSanta%20Fe%2C%20Cebu!5e0!3m2!1sen!2sph!4v1694314593958!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7828.740087984577!2d123.77798078143813!3d11.160213415244321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a88915d0211b39%3A0x30b1e7a7a80be7c7!2ssanta%20fe%20bantayan%20island!5e0!3m2!1sen!2sph!4v1695122190812!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
