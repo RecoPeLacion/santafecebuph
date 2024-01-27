@@ -23,7 +23,7 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 								<h3 class="sf_mainTitle">Visit Us Now</h3>
 							</div>
 							<div class="sf_slider_button">
-								<a href="#">
+								<a href="<?php bloginfo('url'); ?>/tourism">
 									Visit us now
 								</a>
 							</div>
@@ -50,7 +50,7 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 							<a href="#">About this website</a>
 							<div class="sf_footerIgov">
 								<p>
-									iGovernance Team
+									Governance Team
 									<a href="#">Municipality of Santa Fe</a>
 								</p>
 							</div>
@@ -59,42 +59,36 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 					<div class="sf_newFooterCol">
 						<div class="sf_newFooterLinkWrap">
 							<div class="sf_newFooterLinksCard">
-								<h3>Municipality Links</h3>
+								<h3>Santa Fe Offices</h3>
 								<ul>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/offices/mayors">Mayor's Office</a>
 									</li>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/offices/tourism">Tourism Office</a>
 									</li>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/offices/ldrrmo">LDRRMO Office</a>
 									</li>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/offices/hrmo">HRMO Office</a>
 									</li>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/offices/health">Health Office</a>
 									</li>
 								</ul>
 							</div>
 							<div class="sf_newFooterLinksCard">
-								<h3>Municipality Links</h3>
+								<h3>Tourism Links</h3>
 								<ul>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/tourism/santa-fe-eats/">Santa Fe Eats</a>
 									</li>
 									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/tourism/santa-fe-stays/">Santa Fe Stays</a>
 									</li>
 									<li>
-										<a href="#">Visitors</a>
-									</li>
-									<li>
-										<a href="#">Visitors</a>
-									</li>
-									<li>
-										<a href="#">Visitors</a>
+										<a href="<?php bloginfo('url'); ?>/tourism/santa-fe-sights/">Santa Fe Sights</a>
 									</li>
 								</ul>
 							</div>

@@ -828,6 +828,22 @@
 .sf_slider_section {
     position: relative;
     overflow: hidden;
+    height: 1000px;
+    background-image: url(http://alamid.dict.gov.ph/~s4govstafecebuph/wp-content/themes/stafe-themes/assets/img/mayor_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: 1440px) {
+        height: 800px;
+    }
+    @media screen and (max-width: 1190px) {
+        height: 600px;
+        background-position: 90% 50%;
+    }
+    @media screen and (max-width: 767px) {
+        height: 500px;
+        background-position: 90% 50%;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -836,11 +852,7 @@
         left: 0;
         right: 0;
         background-color: rgba(0,0,0,0.3);
-        height: 700px;
         z-index: 1;
-        @media screen and (max-width: 767px) {
-            height: 500px;
-        }
     }
 }
 
@@ -858,6 +870,9 @@
     align-items: center;
     z-index: 2;
     padding: 0 15px;
+    @media screen and (max-width: 767px) {
+        padding-top: 170px;
+    }
     .sf_slider_img {
         display: flex;
         align-items: center;
@@ -875,22 +890,31 @@
         line-height: 80px;
         margin-bottom: 20px;
         @media screen and (max-width: 767px) {
-            font-size: 50px;
-            line-height: 60px;
+            font-size: 40px;
+            line-height: 50px;
         }
     }
     p {
         color: #fff;
         margin-bottom: 30px;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 }
 
 .sf_slider_img {
     img {
         width: 100%;
-        height: 700px;
+        height: 1000px;
         object-fit: cover;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1400px) {
+            height: 800px;
+        }
+        @media screen and (max-width: 1100px) {
+            height: 600px;
+        }
+        @media screen and (max-width: 800px) {
             height: 500px;
         }
     }
@@ -1240,6 +1264,11 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .sf_emergencyCard {
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #0b0d17;
+        }
         .sf_emergencyIcon {
             display: flex;
             align-items: center;

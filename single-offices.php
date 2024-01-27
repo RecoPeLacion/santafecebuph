@@ -18,9 +18,21 @@ get_header();
                         <?php the_title(); ?> Office
                     </h1>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae modi cumque magnam nemo nobis dolore, perferendis quam doloribus iusto sit accusamus animi fugit repellat at sunt pariatur nisi perspiciatis.
-                </p>
+                <?php if (is_single(888)) {
+                    ?>
+                        <p>
+                        Welcome to the Santa Fe Mayor's Office, where we are dedicated to fostering a vibrant and inclusive community for all residents and visitors alike. Our commitment to excellence in governance and public service is at the heart of everything we do. We are proud to serve as the bridge between our municipalities diverse population and its leadership, ensuring that Santa Fe continues to thrive as a place of culture, innovation, and opportunity. Together, we can shape a brighter future for our beloved municipality.
+                        </p>
+                    <?php
+                } else {
+                    ?>
+                        <p>
+                            Welcome to the Santa Fe Municipality Offices – Your Gateway to Efficient Local Governance! We are committed to serving our vibrant community with dedication and transparency. Explore our website to access essential resources, stay informed about local initiatives, and connect with your local government. Together, we're building a brighter future for Santa Fe!
+                        </p>
+                    <?php
+                }
+                ?>
+                
             </div>
         </div>
     </section>

@@ -20,22 +20,13 @@ get_header();
     <div class="sf_slider_wrapper">
         <div class="sf_slider_content">
             <h1>
-                Welcome to Santa Fe Web Portal
+                Welcome to<br> Santa Fe<br> Web Portal
             </h1>
             <p>Santa Fe, officially the Municipality of Santa Fe, is a 4th class municipality in the province of Cebu, Philippines. According to the 2020 census, it has a population of 34,471 people.</p>
             <div class="sf_slider_button">
-                <a href="#">
+                <a href="<?php bloginfo('url'); ?>/offices/mayors/">
                     Mayor's Office
                 </a>
-            </div>
-        </div>
-    </div>
-    <div class="sf_slider">
-        <div class="sf_slider_item">
-            <div class="sf_slider_card">
-                <div class="sf_slider_img">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/img/mayor_banner.jpg" alt="">
-                </div>
             </div>
         </div>
     </div>
@@ -100,45 +91,45 @@ get_header();
             <h4 class="sf_subTitle">CITIZENS’ CHARTER ONLINE</h4>
             <h3 class="sf_mainTitle">Santa Fe Services</h3>
             <p class="sf_subTagline">
-                Sed egestas consectetur dui, eget consequat magna. Sed magna sapien, iaculis eu felis non, mollis congue tortor. Aliquam posuere neque in ullamcorper pharetra. Vestibulum id risus pharetra, semper lorem sed, ultricies felis. Curabitur ac felis vitae quam maximus auctor. Aliquam ultricies, dolor eu luctus pellentesque, diam ipsum aliquam quam, sed porta orci erat quis sapien. Etiam lacinia blandit metus. In ultrices nibh in mi dapibus tempus. Nam a nunc quis ligula porta consequat. Proin venenatis, nibh ut maximus pellentesque, diam tellus vulputate orci, sit amet porttitor nunc justo ac elit. Donec ex urna, malesuada in consequat nec, sodales quis dolor. Maecenas sed velit laoreet, semper dui nec, pretium neque. Pellentesque accumsan leo vitae feugiat blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            At Santa Fe's Finest, we take pride in serving our vibrant community with unwavering care and steadfast commitment. Our mission is to enhance the lives of the people of Santa Fe through dedicated service and genuine compassion.
             </p>
         </div>
         <ul class="sf_frontLineList">
             <li>
-                <a href="#">
+                <a href="<?php bloginfo('url'); ?>/offices/mayors/">
                     <div class="sf_frontLineListCard">
                         <div class="sf_frontLineListImg">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8H32c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9V104l4.4-1.6L240.1 4.2zM64 224h64V416h40V224h64V416h48V224h64V416h40V224h64V420.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512H32c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1V224z"/></svg>
                         </div>
                         <div class="sf_frontLineContent">
                             <h3>Municipal Mayor's Office</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                            <p>The Mayor's office leads with innovation and community focus, shaping a brighter future for our city.</p>
                         </div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<?php bloginfo('url'); ?>/offices/health/">
                     <div class="sf_frontLineListCard">
                         <div class="sf_frontLineListImg">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32V448c0 35.3 28.7 64 64 64H448.5c35.5 0 64.2-28.8 64-64.3l-.7-160.2h32zM256 208c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H320v48c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V320H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h48V208z"/></svg>
                         </div>
                         <div class="sf_frontLineContent">
                             <h3>Municipal Health Office</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                            <p>The Municipal Health Office ensures community well-being through accessible healthcare and public health programs.</p>
                         </div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<?php bloginfo('url'); ?>/offices/gso/">
                     <div class="sf_frontLineListCard">
                         <div class="sf_frontLineListImg">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M272 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm-8 187.3l47.4 57.1c11.3 13.6 31.5 15.5 45.1 4.2s15.5-31.5 4.2-45.1l-73.7-88.9c-18.2-22-45.3-34.7-73.9-34.7H177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V235.3zM352 376c0-4.4 3.6-8 8-8s8 3.6 8 8V488c0 13.3 10.7 24 24 24s24-10.7 24-24V376c0-30.9-25.1-56-56-56s-56 25.1-56 56v8c0 13.3 10.7 24 24 24s24-10.7 24-24v-8z"/></svg>
                         </div>
                         <div class="sf_frontLineContent">
                             <h3>Senior Citizens</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                            <p>The Senior Citizen Office enriches elder lives through essential services and support for an active retirement.</p>
                         </div>
                     </div>
                 </a>
@@ -169,7 +160,7 @@ get_header();
             </div>
         </div>
         <div class="sf_newButton">
-            <a href="<?php bloginfo('officials'); ?>">
+            <a href="<?php bloginfo('url'); ?>/officials">
                 KNOW MORE ABOUT THE MAYOR AND THE CITY COUNCIL
             </a>
         </div>
@@ -182,9 +173,6 @@ get_header();
     <div class="cntr">
         <div class="sf_newTitle">
             <h3 class="sf_mainTitle">Santa Fe Locations</h3>
-            <p class="sf_subTagline">
-                Meet the people mandated to lead the City Government and serve the people of Santa Fe.
-            </p>
         </div>
         <div class="sf_mapWrapper">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7828.740087984577!2d123.77798078143813!3d11.160213415244321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a88915d0211b39%3A0x30b1e7a7a80be7c7!2ssanta%20fe%20bantayan%20island!5e0!3m2!1sen!2sph!4v1695122190812!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -199,7 +187,7 @@ get_header();
         <div class="sf_newTitle">
             <h3 class="sf_mainTitle">People Participation</h3>
             <p class="sf_subTagline">
-                Santa Fe prioritizes citizen participation in governance, seeing them as active partners in creating a livable, sustainable, and equitable community. This approach fosters a sense of ownership and responsibility among citizens, resulting in positive change and making Santa Fe a model for other cities.
+            Santa Fe's strength lies in the active participation of its residents, who come together to celebrate traditions, drive local initiatives, and create a welcoming atmosphere that fosters unity and mutual support. Whether it's volunteering, engaging in civic activities, or contributing to local causes, the people of Santa Fe are the heart and soul of our community, making it a place where everyone can feel connected and valued.
             </p>
         </div>
         <div class="sf_participationWrapper">
@@ -209,8 +197,8 @@ get_header();
                         <div class="sf_participationImg">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 32c477.6 0 366.6 317.3 367.1 366.3L448 480h-26l-70.4-71.2c-39 4.2-124.4 34.5-214.4-37C47 300.3 52 214.7 0 32zm79.7 46c-49.7-23.5-5.2 9.2-5.2 9.2 45.2 31.2 66 73.7 90.2 119.9 31.5 60.2 79 139.7 144.2 167.7 65 28 34.2 12.5 6-8.5-28.2-21.2-68.2-87-91-130.2-31.7-60-61-118.6-144.2-158.1z"/></svg>
                         </div>
-                        <h3>Green Santa Fe i-Engage Ordinance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>Green Santa Fe Engage Ordinance</h3>
+                        <p>Santa Fe is not just a municipality; it's a green community and a champion for environmental advocacy. With a deep commitment to sustainability, we're dedicated to preserving our natural surroundings and leading the way in eco-friendly initiatives that benefit our residents and the planet</p>
                     </div>
                 </li>
                 <li>
@@ -219,7 +207,7 @@ get_header();
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"/></svg>
                         </div>
                         <h3>Empowering Ordinary Citizens</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <p>The Municipality of Santa Fe is steadfast in its mission to empower ordinary citizens, giving them the tools, resources, and opportunities they need to play an active and influential role in shaping the future of our community</p>
                     </div>
                 </li>
                 <li>
@@ -228,7 +216,7 @@ get_header();
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg>
                         </div>
                         <h3>Civil Society Organizations</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <p>The Municipality of Santa Fe strongly supports civil society organizations, recognizing their invaluable contributions in fostering a vibrant, engaged, and inclusive community that works collaboratively for the betterment of all.</p>
                     </div>
                 </li>
             </ul>
@@ -250,8 +238,8 @@ get_header();
                         <div class="sf_emergencyIcon">
                             <svg aria-hidden="true" class="e-font-icon-svg e-fas-mobile-alt" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>
                         </div>
-                        <h3>Mobile (ComCen)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>Mayor's Office</h3>
+                        <a href="tel:4389610">438 9610</a>
                     </div>
                 </li>
                 <li>
@@ -259,8 +247,8 @@ get_header();
                         <div class="sf_emergencyIcon">
                             <svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>
                         </div>
-                        <h3>Landline (COMCEN)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>PNP</h3>
+                        <a href="tel:09985986377">09985986377</a>
                     </div>
                 </li>
                 <li>
@@ -269,15 +257,11 @@ get_header();
                             <svg aria-hidden="true" class="e-font-icon-svg e-fas-fire-extinguisher" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M434.027 26.329l-168 28C254.693 56.218 256 67.8 256 72h-58.332C208.353 36.108 181.446 0 144 0c-39.435 0-66.368 39.676-52.228 76.203-52.039 13.051-75.381 54.213-90.049 90.884-4.923 12.307 1.063 26.274 13.37 31.197 12.317 4.926 26.279-1.075 31.196-13.37C75.058 112.99 106.964 120 168 120v27.076c-41.543 10.862-72 49.235-72 94.129V488c0 13.255 10.745 24 24 24h144c13.255 0 24-10.745 24-24V240c0-44.731-30.596-82.312-72-92.97V120h40c0 2.974-1.703 15.716 10.027 17.671l168 28C441.342 166.89 448 161.25 448 153.834V38.166c0-7.416-6.658-13.056-13.973-11.837zM144 72c-8.822 0-16-7.178-16-16s7.178-16 16-16 16 7.178 16 16-7.178 16-16 16z"></path></svg>
                         </div>
                         <h3>Bureau of Fire Protection</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <a href="tel:4389210">438 9210 </a> <br>
+                        <a href="tel:09232495876">09232495876</a>
                     </div>
                 </li>
             </ul>
-            <div class="sf_newButton">
-                <a href="#">
-                    LIST OF IMPORTANT NUMBERS
-                </a>
-            </div>
         </div>
     </div>
 </section>

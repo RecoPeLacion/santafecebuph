@@ -19,7 +19,7 @@ get_header();
                     </h1>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae modi cumque magnam nemo nobis dolore, perferendis quam doloribus iusto sit accusamus animi fugit repellat at sunt pariatur nisi perspiciatis.
+                Welcome to the Santa Fe Municipality Offices – Your Gateway to Efficient Local Governance! We are committed to serving our vibrant community with dedication and transparency. Explore our website to access essential resources, stay informed about local initiatives, and connect with your local government. Together, we're building a brighter future for Santa Fe!
                 </p>
             </div>
         </div>
